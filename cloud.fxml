@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMain">
+   <ListView fx:id="clientView" layoutX="14.0" layoutY="38.0" prefHeight="346.0" prefWidth="261.0" />
+   <ListView fx:id="serverView" layoutX="325.0" layoutY="38.0" prefHeight="346.0" prefWidth="261.0" />
+   <Button layoutX="277.0" layoutY="38.0" mnemonicParsing="false" onAction="#upload" prefHeight="38.0" prefWidth="47.0" text="&gt;">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Button>
+   <Button layoutX="277.0" layoutY="83.0" mnemonicParsing="false" onAction="#downLoad" prefHeight="36.0" prefWidth="47.0" text="&lt;">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Button>
+   <TextField fx:id="clientPath" editable="false" layoutX="14.0" layoutY="11.0" prefHeight="26.0" prefWidth="217.0" />
+   <TextField fx:id="serverPath" editable="false" layoutX="325.0" layoutY="11.0" prefHeight="26.0" prefWidth="211.0" />
+   <Button layoutX="230.0" layoutY="11.0" mnemonicParsing="false" onAction="#clientPathUp" prefHeight="27.0" prefWidth="47.0" text="../" />
+   <Button layoutX="538.0" layoutY="11.0" mnemonicParsing="false" onAction="#serverPathUp" prefHeight="27.0" prefWidth="47.0" text="../" />
+   <Button fx:id="renameButton" layoutX="277.0" layoutY="128.0" mnemonicParsing="false" onAction="#renameClient" prefHeight="36.0" prefWidth="47.0" text="rename">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="deleteClientButton" layoutX="277.0" layoutY="164.0" mnemonicParsing="false" onAction="#deleteClient" prefHeight="36.0" prefWidth="47.0" text="delete">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button layoutX="277.0" layoutY="200.0" mnemonicParsing="false" onAction="#sortA_Z_FirstFoldersClient" prefHeight="36.0" prefWidth="47.0" text="first folders" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button layoutX="277.0" layoutY="236.0" mnemonicParsing="false" onAction="#sortA_ZClient" prefHeight="36.0" prefWidth="47.0" text="sort A-Z" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="clientSubmitButton" layoutX="230.0" layoutY="11.0" mnemonicParsing="false" onAction="#clientPathUp" prefHeight="27.0" prefWidth="47.0" text="Submit" visible="false">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="serverSubmitButton" layoutX="538.0" layoutY="11.0" mnemonicParsing="false" onAction="#clientPathUp" prefHeight="27.0" prefWidth="47.0" text="Submit" visible="false">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="renameButtonServer" layoutX="277.0" layoutY="128.0" mnemonicParsing="false" onAction="#renameServer" prefHeight="36.0" prefWidth="47.0" text="renameS" visible="false">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="deleteServerButton" layoutX="277.0" layoutY="164.0" mnemonicParsing="false" onAction="#deleteServer" prefHeight="36.0" prefWidth="47.0" text="deleteS" visible="false">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="sortFirstFoldersServerButton" layoutX="277.0" layoutY="200.0" mnemonicParsing="false" onAction="#sortA_Z_FirstFoldersServer" prefHeight="36.0" prefWidth="47.0" text="first flodersS" textAlignment="CENTER" visible="false" wrapText="true">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="sortA_ZButtonServer" layoutX="277.0" layoutY="236.0" mnemonicParsing="false" onAction="#sortA_ZServer" prefHeight="36.0" prefWidth="47.0" text="sort A-ZS" textAlignment="CENTER" visible="false" wrapText="true">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="createFolderClient" layoutX="277.0" layoutY="272.0" mnemonicParsing="false" onAction="#createFolderClient" prefHeight="36.0" prefWidth="47.0" text="create folder" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button fx:id="createFolderServer" layoutX="277.0" layoutY="272.0" mnemonicParsing="false" onAction="#createFolderServer" prefHeight="36.0" prefWidth="47.0" text="create folderS" textAlignment="CENTER" visible="false" wrapText="true">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+</AnchorPane>
